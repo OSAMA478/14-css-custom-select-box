@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+    width: 100vw;
+
+	background: rgb(52, 204, 255);
+}
+
+.box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.box select {
+    background: #0563af;
+    color: #ffffff;
+
+    padding: 10px;
+
+    width: 15rem;
+    height: 3rem;
+    border: none;
+
+    font-size: 20px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+    appearance: button;
+
+    outline: none;
+}
+
+.box:before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 3rem;
+    height: 3rem;
+
+    background: #007ce0;
+
+    pointer-events: none;
+
+}
+
+.box:hover::before {
+    background: #0472ca;
+    appearance: none;
+    
+}
+
+svg {
+    position: absolute;
+    top: 50%;
+    left: 13.5rem;
+
+    transform: translate(-50%,-50%);
+
+    pointer-events: none;
+}
